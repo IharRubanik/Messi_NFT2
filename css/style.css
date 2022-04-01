@@ -1,0 +1,176 @@
+* {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+}
+
+body .wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+body .wrapper .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body .wrapper .header {
+  position: absolute;
+  top: 5.5555555555556vh;
+  width: 92.708vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .header .header__left-block img:nth-last-child(3n) {
+  width: 8.333vw;
+  margin-right: 3.203vw;
+}
+
+body .wrapper .header .header__left-block img:nth-last-child(2n) {
+  width: 3.307vw;
+  margin-right: 2.422vw;
+}
+
+body .wrapper .header .header__left-block img:last-child {
+  width: 6.25vw;
+}
+
+body .wrapper .header .header__right-block input {
+  width: 7.917vw;
+  height: 4.6296296296296vh;
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 0.99vw;
+  color: #ffffff;
+}
+
+body .wrapper .header .header__right-block input:last-child {
+  background-color: #d8b45d;
+  background-image: url(../img/arrow_input.svg);
+  background-position: right 1.302vw bottom 50%;
+  background-repeat: no-repeat;
+  background-size: 1.25vw;
+  padding-right: 2.302vw;
+  color: #000000;
+}
+
+body .wrapper .main .messi {
+  position: absolute;
+  left: 8.281vw;
+  top: 18.009259259259vh;
+  width: 39.219vw;
+}
+
+body .wrapper .main .main__title {
+  position: absolute;
+  top: 27.777777777778vh;
+  left: 50.234vw;
+}
+
+body .wrapper .main .main__title img {
+  width: 36.25vw;
+}
+
+body .wrapper .main .main__title p {
+  margin: 11.269841269841vh 0 0 0;
+  font-weight: 700;
+  font-size: 1.042vw;
+  line-height: 2.5925925925926vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+body .wrapper .main .main__title .main__description {
+  margin: 4.5833333333333vh 0 0 0;
+  display: block;
+  font-weight: 600;
+  font-size: 0.938vw;
+  line-height: 2.037037037037vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+body .wrapper .main .main__title .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .main .main__title .timer .timer-elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.92592592592593vh 2.083vw 0 0;
+}
+
+body .wrapper .main .main__title .timer .timer-elem:last-child {
+  margin-right: 0;
+}
+
+body .wrapper .main .main__title .timer .timer-elem .time-number {
+  font-weight: 700;
+  font-size: 1.875vw;
+  line-height: 4.0740740740741vh;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.72%, #fadf78), color-stop(78.26%, #f7e9ba));
+  background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
+}
+
+body .wrapper .main .main__title .timer .timer-elem .time-text {
+  display: block;
+  font-weight: 400;
+  font-size: 0.729vw;
+  line-height: 1.5740740740741vh;
+  text-align: center;
+  color: #ffffff;
+  margin: 0.18518518518519vh 0 0 0;
+}
+
+body .wrapper .main .main__title .main__button {
+  display: block;
+  margin: 5.0462962962963vh auto 0;
+  border: none;
+  width: 8.542vw;
+  height: 4.9074074074074vh;
+  background: #d8b45d;
+  font-weight: 500;
+  font-size: 0.99vw;
+  text-align: center;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
