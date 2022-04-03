@@ -147,7 +147,7 @@ body .wrapper .main .main__title p br:nth-child(1) {
 body .wrapper .main .main__description-container {
   position: absolute;
   left: 59.714vw;
-  top: 34.8vw;
+  top: 33.5vw;
 }
 
 body .wrapper .main .main__description-container .main__description {
@@ -233,15 +233,18 @@ body .wrapper .main .main__description-container .main__button:hover {
     overflow: auto;
     height: 53vw;
   }
-  body .wrapper {
-    height: auto;
+}
+
+@media (max-width: 1024px) {
+  body .wrapper .main .main__title {
+    top: 50%;
+    -webkit-transform: translateY(-85%);
+            transform: translateY(-85%);
   }
-  body .wrapper .background {
-    height: 100%;
-  }
-  body .wrapper .main .messi {
-    bottom: auto;
-    top: 10.521vw;
+  body .wrapper .main .main__description-container {
+    top: 50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
 }
 
@@ -454,12 +457,11 @@ body .wrapper .main .main__description-container .main__button:hover {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: auto;
-    bottom: 6.667vw;
+    top: 40.779610194903vh;
   }
   body .wrapper .main .main__title {
     width: 100%;
-    top: 30.933vw;
+    top: 17.391304347826vh;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -511,7 +513,6 @@ body .wrapper .main .main__description-container .main__button:hover {
 
 @media (min-aspect-ratio: 375 / 667) and (max-width: 768px) {
   body {
-    position: relative;
     overflow: auto;
     height: 178vw;
   }
@@ -519,12 +520,19 @@ body .wrapper .main .main__description-container .main__button:hover {
     height: 100%;
   }
   body .wrapper .main .messi {
-    top: 72.533vw;
-    bottom: auto;
+    top: auto;
+    bottom: 6.667vw;
   }
-  body .wrapper .main .main__description-container {
-    bottom: auto;
-    top: 123.467vw;
+  body .wrapper .main .main__title {
+    top: 30.933vw;
   }
+}
+
+.main_wrapper {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50vw;
 }
 /*# sourceMappingURL=style.css.map */

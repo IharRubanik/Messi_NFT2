@@ -8,7 +8,7 @@ body {
   overflow: hidden;
   padding: 3.125vw 3.646vw;
   position: relative;
-    height: 100vh;
+  height: 100vh;
   .wrapper {
     width: 100%;
     height: 100%;
@@ -111,7 +111,7 @@ body {
       .main__description-container {
         position: absolute;
         left: 59.714vw;
-        top: 34.8vw;
+        top: 33.5vw;
         .main__description {
           display: block;
           font-weight: 600;
@@ -176,19 +176,24 @@ body {
   }
 }
 
-@media (min-aspect-ratio: 3840/1939) and (min-width: 769px)   {
+@media (min-aspect-ratio: 3840/1939) and (min-width: 769px) {
   body {
     overflow: auto;
     height: 53vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
     .wrapper {
-      height: auto;
-      .background {
-        height: 100%;
-      }
       .main {
-        .messi {
-          bottom: auto;
-          top: 10.521vw;
+        .main__title {
+          top: 50%;
+          transform: translateY(-85%);
+        }
+        .main__description-container{
+          top: 50%;
+          transform: translateY(50%);
         }
       }
     }
@@ -362,12 +367,13 @@ body {
           width: 94.667vw;
           left: 50%;
           transform: translateX(-50%);
-          top: auto;
-          bottom: 6.667vw;
+
+          top: 40.779610194903vh;
         }
         .main__title {
           width: 100%;
-          top: 30.933vw;
+          top: 17.391304347826vh;
+
           left: 50%;
           transform: translateX(-50%);
           img {
@@ -421,7 +427,6 @@ body {
 }
 @media (min-aspect-ratio: 375/667) and (max-width: 768px) {
   body {
-    position: relative;
     overflow: auto;
     height: 178vw;
     .wrapper {
@@ -430,14 +435,20 @@ body {
       }
       .main {
         .messi {
-          top: 72.533vw;
-          bottom: auto;
+          top: auto;
+          bottom: 6.667vw;
         }
-        .main__description-container {
-          bottom: auto;
-          top: 123.467vw;
+        .main__title {
+          top: 30.933vw;
         }
       }
     }
   }
+}
+
+.main_wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50vw;
 }
