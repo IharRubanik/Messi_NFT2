@@ -58,8 +58,7 @@ body {
           color: #ffffff;
           transition: 0.2s;
           &:first-child:hover {
-            background: rgba(216, 180, 93, 1);
-            color: #000000;
+            color: rgba(216, 180, 93, 1);
           }
           &:last-child {
             display: flex;
@@ -176,11 +175,10 @@ body {
   }
 }
 
-@media (min-aspect-ratio: 640/322) and (min-width: 769px) {
+@media (min-aspect-ratio: 640/322) and (min-width: 1024px) {
   body {
     overflow: auto;
     height: 53vw;
-
   }
 }
 
@@ -188,13 +186,31 @@ body {
   body {
     .wrapper {
       .main {
+        .messi {
+          width: 44vw;
+          left: 4vw;
+        }
         .main__title {
           top: 50%;
           transform: translateY(-85%);
         }
-        .main__description-container{
+        .main__description-container {
           top: 50%;
           transform: translateY(50%);
+        }
+      }
+    }
+  }
+}
+@media (min-aspect-ratio: 512/295) and (max-width: 1024px) {
+  body {
+    overflow: auto;
+    height: 56vw;
+    .wrapper {
+      .main {
+        .messi {
+          bottom: auto;
+          top: 10vw;
         }
       }
     }
@@ -216,15 +232,20 @@ body {
         width: 49.867vw;
         background: rgba(22, 19, 20, 1);
         z-index: 2;
-        padding: 4vw;
-
+        padding: 4vw 4vw 8vw;
         flex-direction: column;
         align-items: center;
-        &:first-child {
-          align-items: flex-end;
+        .policy {
+          margin: auto auto 0;
+          color: #ffffff;
+          font-size: 3.2vw;
+          opacity: 0.5;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5.333vw;
         }
         .header__burger {
-          display: block;
           width: 10.133vw;
           height: 10.133vw;
           border: 0.267vw rgba(216, 180, 93, 1) solid;
@@ -272,8 +293,7 @@ body {
             color: #ffffff;
             transition: 0.2s;
             &:hover {
-              background: rgba(216, 180, 93, 1);
-              color: #000000;
+              color: rgba(216, 180, 93, 1);
             }
             &:nth-child(1) {
               margin: 6.133vw 0 0 0;
@@ -445,11 +465,4 @@ body {
       }
     }
   }
-}
-
-.main_wrapper {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 50vw;
 }
