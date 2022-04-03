@@ -176,10 +176,11 @@ body {
   }
 }
 
-@media (min-aspect-ratio: 3840/1939) and (min-width: 769px) {
+@media (min-aspect-ratio: 640/322) and (min-width: 769px) {
   body {
     overflow: auto;
     height: 53vw;
+
   }
 }
 
