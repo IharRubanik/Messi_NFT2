@@ -113,34 +113,108 @@ body .wrapper .header .header__right-block button:last-child:hover {
   background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
 }
 
-body .wrapper .main .messi {
+body .wrapper .main .messi-nft {
   position: absolute;
-  left: 10.625vw;
-  width: 34.531vw;
-  bottom: 4.115vw;
+  left: 0.625vw;
+  width: 75.531vw;
+  bottom: 8.115vw;
 }
 
 body .wrapper .main .main__title {
   position: absolute;
-  top: 14.115vw;
-  left: 50.234vw;
+  top: 7vw;
+  left: 56.234vw;
+  text-align: center;
 }
 
 body .wrapper .main .main__title img {
-  width: 36.25vw;
+  width: 8.6vw;
+}
+
+body .wrapper .main .main__title h1 {
+  margin: 1.901vw 0 0 0;
+  font-weight: 700;
+  font-size: 2.969vw;
+  line-height: 3.62vw;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.72%, #fadf78), color-stop(78.26%, #f7e9ba));
+  background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
 }
 
 body .wrapper .main .main__title p {
-  margin: 3.698vw 0 0 0;
   font-weight: 700;
   font-size: 1.042vw;
   line-height: 1.458vw;
-  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.72%, #fadf78), color-stop(78.26%, #f7e9ba));
+  background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-emphasis-color: transparen;
+          text-emphasis-color: transparen;
+}
+
+body .wrapper .main .main__title span {
+  margin: 2.552vw auto 0;
+  display: block;
+  width: 3.516vw;
+  height: 0.026vw;
+  background: #ffd200;
+}
+
+body .wrapper .main .main__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 56.234vw;
+  top: 21.479vw;
+}
+
+body .wrapper .main .main__tabs .main__tabs-description ul {
+  font-weight: 700;
+  font-size: 0.885vw;
+  line-height: 1.068vw;
   color: #ffffff;
 }
 
-body .wrapper .main .main__title p br:nth-child(1) {
-  display: none;
+body .wrapper .main .main__tabs .main__tabs-description ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 0.677vw;
+  line-height: 1.094vw;
+  color: #ffffff;
+  margin: 0.521vw 0 0 0;
+}
+
+body .wrapper .main .main__tabs .main__tabs-description ul li:first-child {
+  margin: 52px 0 0 0;
+}
+
+body .wrapper .main .main__tabs .main__tabs-description ul li div {
+  width: 8px;
+  height: 8px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+body .wrapper .main .main__tabs .main__tabs-description p {
+  margin: 1.302vw 0 0 0;
+  font-weight: 400;
+  font-size: 0.573vw;
+  line-height: 0.703vw;
+  color: #ffffff;
+  opacity: 0.6;
 }
 
 body .wrapper .main .main__description-container {
@@ -235,7 +309,7 @@ body .wrapper .main .main__description-container .main__button:hover {
 }
 
 @media (max-width: 1024px) {
-  body .wrapper .main .messi {
+  body .wrapper .main .messi-nft {
     width: 44vw;
     left: 4vw;
   }
@@ -256,7 +330,7 @@ body .wrapper .main .main__description-container .main__button:hover {
     overflow: auto;
     height: 56vw;
   }
-  body .wrapper .main .messi {
+  body .wrapper .main .messi-nft {
     bottom: auto;
     top: 10vw;
   }
@@ -476,7 +550,7 @@ body .wrapper .main .main__description-container .main__button:hover {
     height: 0.533vw;
     background: #ffffff;
   }
-  body .wrapper .main .messi {
+  body .wrapper .main .messi-nft {
     width: 94.667vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -499,12 +573,6 @@ body .wrapper .main .main__description-container .main__button:hover {
     margin: 4.533vw 0 0 0;
     font-size: 4vw;
     line-height: 6.4vw;
-  }
-  body .wrapper .main .main__title p br:nth-child(1) {
-    display: block;
-  }
-  body .wrapper .main .main__title p br:nth-child(2) {
-    display: none;
   }
   body .wrapper .main .main__description-container {
     left: 50%;
@@ -543,7 +611,7 @@ body .wrapper .main .main__description-container .main__button:hover {
   body .wrapper .background {
     height: 100%;
   }
-  body .wrapper .main .messi {
+  body .wrapper .main .messi-nft {
     top: auto;
     bottom: 6.667vw;
   }

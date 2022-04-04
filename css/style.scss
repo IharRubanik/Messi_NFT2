@@ -82,28 +82,89 @@ body {
       }
     }
     .main {
-      .messi {
+      .messi-nft {
         position: absolute;
-        left: 10.625vw;
-        width: 34.531vw;
-        bottom: 4.115vw;
+        left: 0.625vw;
+        width: 75.531vw;
+        bottom: 8.115vw;
       }
       .main__title {
         position: absolute;
-        top: 14.115vw;
-        left: 50.234vw;
+        top: 7vw;
+        left: 56.234vw;
+        text-align: center;
         img {
-          width: 36.25vw;
+          width: 8.6vw;
+        }
+        h1 {
+          margin: 1.901vw 0 0 0;
+          font-weight: 700;
+          font-size: 2.969vw;
+          line-height: 3.62vw;
+          text-transform: uppercase;
+          background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-emphasis-color: transparent;
         }
         p {
-          margin: 3.698vw 0 0 0;
           font-weight: 700;
           font-size: 1.042vw;
           line-height: 1.458vw;
-          text-align: center;
-          color: #ffffff;
-          br:nth-child(1) {
-            display: none;
+          background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-emphasis-color: transparen;
+        }
+        span {
+          margin: 2.552vw auto 0;
+          display: block;
+          width: 3.516vw;
+          height: 0.026vw;
+          background: #ffd200;
+        }
+      }
+
+      .main__tabs {
+        display: flex;
+        position: absolute;
+        left: 56.234vw;
+        top: 21.479vw;
+        .main__tabs-description {
+          ul {
+            font-weight: 700;
+            font-size: 0.885vw;
+            line-height: 1.068vw;
+            color: #ffffff;
+
+            li {
+              display: flex;
+              align-items: center;
+              font-weight: 400;
+              font-size: 0.677vw;
+              line-height: 1.094vw;
+              color: #ffffff;
+              margin: 0.521vw 0 0 0;
+              &:first-child {
+                margin: 52px 0 0 0;
+              }
+              div {
+                width: 8px;
+                height: 8px;
+                background: #FFFFFF;
+                border-radius: 50%
+              }
+            }
+          }
+          p {
+            margin: 1.302vw 0 0 0;
+            font-weight: 400;
+            font-size: 0.573vw;
+            line-height: 0.703vw;
+            color: #ffffff;
+            opacity: 0.6;
           }
         }
       }
@@ -186,7 +247,7 @@ body {
   body {
     .wrapper {
       .main {
-        .messi {
+        .messi-nft {
           width: 44vw;
           left: 4vw;
         }
@@ -208,7 +269,7 @@ body {
     height: 56vw;
     .wrapper {
       .main {
-        .messi {
+        .messi-nft {
           bottom: auto;
           top: 10vw;
         }
@@ -384,7 +445,7 @@ body {
         }
       }
       .main {
-        .messi {
+        .messi-nft {
           width: 94.667vw;
           left: 50%;
           transform: translateX(-50%);
@@ -406,12 +467,6 @@ body {
             margin: 4.533vw 0 0 0;
             font-size: 4vw;
             line-height: 6.4vw;
-            br:nth-child(1) {
-              display: block;
-            }
-            br:nth-child(2) {
-              display: none;
-            }
           }
         }
         .main__description-container {
@@ -455,7 +510,7 @@ body {
         height: 100%;
       }
       .main {
-        .messi {
+        .messi-nft {
           top: auto;
           bottom: 6.667vw;
         }
