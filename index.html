@@ -34,6 +34,7 @@
         <source src="./img/background.mp4" tupe="video/mp4" />
       </video> -->
       <img class="background" src="./img/background.png" alt="background" />
+
       <header class="header">
         <div class="header__left-block">
           <img src="./img/paris_golden_city.svg" alt="paris_golden_city" />
@@ -66,35 +67,63 @@
           <div class="main__tabs-description">
             <ul>
               Money Can't Buy Experience with Lionel Messi:
-              <li> <div></div> Spend 2 days in Paris for 2 people</li>
-              <li><div></div>
-                Assist in a training session including a meet and greet with
-                Lionel Messi (subject <br> to Covid Protocols) including
-                picture/video with the player
+              <li>
+                <div></div>
+                Spend 2 days in Paris for 2 people
               </li>
-              <li><div></div>Unique experience during a game at the Parc des Princes</li>
+              <li>
+                <div></div>
+                Assist in a training session including a meet and greet with
+                Lionel Messi (subject <br />
+                to Covid Protocols) including picture/video with the player
+              </li>
+              <li>
+                <div></div>
+                Unique experience during a game at the Parc des Princes
+              </li>
             </ul>
             <p>Note: Experience included in NFT is for a one time use only.</p>
           </div>
           <div class="main__tabs-button">
-            <div class="experience">
-              <span>History</span>
-              <img src="ball" alt="" />
+            <div class="tabs-elem experience">
+              <span>Experience</span>
+              <div class="ball-wrapper">
+                <img class="ball" src="./img/ball.svg" alt="" />
+              </div>
             </div>
-            <div class="bids">
+            <div class="tabs-elem bids">
               <span>Bids</span>
+              <div class="ball-wrapper">
+                <img class="dot" src="./img/dot.svg" alt="" />
+              </div>
             </div>
-            <div class="information">
+            <div class="tabs-elem information">
               <span>Information</span>
+              <div class="ball-wrapper">
+                <img class="dot" src="./img/dot.svg" alt="" />
+              </div>
             </div>
-            <div class="history">
+            <div class="tabs-elem history">
               <span>History</span>
+              <div class="ball-wrapper">
+                <img class="dot" src="./img/dot.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="current-bid">
+          <div class="price">
+            <span>Current bid:</span>
+            <img src="./img/price.svg" alt="price" />
+          </div>
+          <button>
+            Sign in to bid <img src="./img/hammer-grey.svg" alt="hammer" />
+          </button>
+        </div>
+
         <div class="main__description-container">
-          <span class="main__description">AUCTION IS LIVE - ENDS IN:</span>
+          <span class="main__description">AUCTION ENDS IN:</span>
           <div class="timer">
             <div class="timer-elem">
               <span class="time-number">345</span>
@@ -113,7 +142,7 @@
               <span class="time-text">SEC</span>
             </div>
           </div>
-          <button class="main__button">View</button>
+          <!-- <button class="main__button">View</button> -->
         </div>
       </main>
     </div>
