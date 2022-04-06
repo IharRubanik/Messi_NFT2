@@ -238,6 +238,7 @@ body {
           gap: 0.781vw;
           width: 11.458vw;
           height: 2.76vw;
+          border: none;
           background: rgba(255, 255, 255, 0.3);
           font-weight: 500;
           font-size: 0.99vw;
@@ -302,6 +303,20 @@ body {
           }
         }
       }
+      .privacy_policy {
+        position: absolute;
+        bottom: 2.031vw;
+        right: 3.646vw;
+        display: flex;
+        gap: 2.083vw;
+        span {
+          font-weight: 700;
+          font-size: 0.677vw;
+          line-height: 0.833vw;
+          color: #ffffff;
+          opacity: 0.5;
+        }
+      }
     }
   }
 }
@@ -356,7 +371,10 @@ body {
     padding: 5.333vw 4vw 0;
     .wrapper {
       .background {
-        height: 177.867vw;
+        height: 100%;
+        position: fixed;
+        transform: translate(-45%);
+        width: 332vw;
       }
       .menu-mobile {
         &.active {
@@ -632,16 +650,18 @@ body {
           gap: 5.867vw;
 
           .price {
+            z-index: 1;
             gap: 3.5vw;
             span {
               font-size: 4vw;
-              margin: 10px 0 0 0;
+              margin: 2.667vw 0 0 0;
             }
             img {
               width: 36.267vw;
             }
           }
           button {
+            z-index: 1;
             border: none;
             width: 92vw;
             height: 12.267vw;
@@ -662,7 +682,7 @@ body {
           height: 25vw;
           background-image: url(../img/timer-background-mobile.svg);
           background-position: bottom;
-          margin: 60px 0 0 0;
+          margin: 16vw 0 0 0;
 
           .main__description {
             font-size: 3.733vw;
@@ -677,10 +697,13 @@ body {
                 font-size: 6.4vw;
               }
               .time-text {
-                font-size: 12px;
+                font-size: 3.2vw;
               }
             }
           }
+        }
+        .privacy_policy {
+          display: none;
         }
       }
     }
