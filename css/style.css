@@ -246,6 +246,7 @@ body .wrapper .main .main__tabs .main__tabs-button {
 }
 
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,6 +266,27 @@ body .wrapper .main .main__tabs .main__tabs-button .tabs-elem:first-child {
   font-weight: 700;
 }
 
+body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot {
+  width: 0.2vw;
+  height: 0.2vw;
+  background: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  right: 0.12vw;
+}
+
+body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot:nth-child(1) {
+  top: 40%;
+}
+
+body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot:nth-child(2) {
+  top: 60%;
+}
+
+body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot:nth-child(3) {
+  top: 80%;
+}
+
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper {
   width: 1.823vw;
 }
@@ -282,7 +304,7 @@ body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper .dot
 body .wrapper .main .current-bid {
   position: absolute;
   left: 56.234vw;
-  bottom: 7.7vw;
+  top: 36vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,10 +349,10 @@ body .wrapper .main .current-bid button {
   width: 11.458vw;
   height: 2.76vw;
   border: none;
-  background: rgba(255, 255, 255, 0.3);
+  background: #d8b45d;
+  color: #000000;
   font-weight: 500;
   font-size: 0.99vw;
-  color: rgba(255, 255, 255, 0.4);
 }
 
 body .wrapper .main .current-bid button img {
@@ -796,6 +818,9 @@ body .wrapper .main .privacy_policy span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot {
+    display: none;
   }
   body .wrapper .main .main__tabs .main__tabs-button .tabs-elem span {
     margin: 0 0 1.333vw 0;

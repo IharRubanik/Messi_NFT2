@@ -187,6 +187,7 @@ body {
           flex-direction: column;
           align-items: flex-end;
           .tabs-elem {
+            position: relative;
             display: flex;
             align-items: flex-start;
             font-size: 0.729vw;
@@ -198,6 +199,23 @@ body {
             &:first-child {
               color: #d8b45d;
               font-weight: 700;
+            }
+            .mini-dot {
+              width: 0.2vw;
+              height: 0.2vw;
+              background: #ffffff;
+              border-radius: 100%;
+              position: absolute;
+              right: 0.12vw;
+              &:nth-child(1) {
+                top: 40%;
+              }
+              &:nth-child(2) {
+                top: 60%;
+              }
+              &:nth-child(3) {
+                top: 80%;
+              }
             }
             .ball-wrapper {
               width: 1.823vw;
@@ -215,7 +233,7 @@ body {
       .current-bid {
         position: absolute;
         left: 56.234vw;
-        bottom: 7.7vw;
+        top: 36vw;
         display: flex;
         flex-direction: column;
         gap: 1.302vw;
@@ -240,10 +258,10 @@ body {
           width: 11.458vw;
           height: 2.76vw;
           border: none;
-          background: rgba(255, 255, 255, 0.3);
+          background: rgba(216, 180, 93, 1);
+          color: #000000;
           font-weight: 500;
           font-size: 0.99vw;
-          color: rgba(255, 255, 255, 0.4);
           img {
             width: 1.432vw;
           }
@@ -629,6 +647,9 @@ body {
               line-height: 4.8vw;
               width: min-content;
               flex-direction: column;
+              .mini-dot{
+                display: none;
+              }
               span {
                 margin: 0 0 1.333vw 0;
               }
