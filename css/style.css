@@ -292,7 +292,7 @@ body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper {
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper .ball {
   -webkit-transform: translateX(25%);
           transform: translateX(25%);
-  width: 1.172vw;
+  width: 1.120vw;
 }
 
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper .dot {
