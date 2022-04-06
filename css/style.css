@@ -411,6 +411,7 @@ body .wrapper .main .main__description-container .timer .timer-elem {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 0.130vw;
 }
 
 body .wrapper .main .main__description-container .timer .timer-elem .time-number {
