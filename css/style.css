@@ -265,12 +265,12 @@ body .wrapper .main .main__tabs .main__tabs-button .tabs-elem:first-child {
 }
 
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot {
-  width: 0.2vw;
-  height: 0.2vw;
+  width: 0.15vw;
+  height: 0.15vw;
   background: #ffffff;
   border-radius: 100%;
   position: absolute;
-  right: 0.12vw;
+  right: 0.15vw;
 }
 
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .mini-dot:nth-child(1) {
