@@ -290,9 +290,9 @@ body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper {
 }
 
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper .ball {
-  -webkit-transform: translateX(25%);
-          transform: translateX(25%);
-  width: 1.120vw;
+  -webkit-transform: translate(25%, -16%);
+          transform: translate(25%, -16%);
+  width: 1.094vw;
 }
 
 body .wrapper .main .main__tabs .main__tabs-button .tabs-elem .ball-wrapper .dot {
