@@ -23,6 +23,236 @@ body .wrapper {
   height: 100%;
 }
 
+body .wrapper .container-pay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .container-pay .pay {
+  border: 0.052vw rgba(131, 116, 69, 0.34) solid;
+  position: relative;
+  padding: 0 2.344vw;
+  width: 36.458vw;
+  height: 19.01vw;
+  background-color: #161314;
+}
+
+body .wrapper .container-pay .pay .pay__exit {
+  border: none;
+  background: none;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.172vw;
+}
+
+body .wrapper .container-pay .pay .pay__exit img {
+  width: 0.781vw;
+  height: 0.781vw;
+}
+
+body .wrapper .container-pay .pay .pay__current-bid {
+  padding: 0.911vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 4.349vw;
+  border-bottom: 0.026vw #ffd200 solid;
+  gap: 0.859vw;
+}
+
+body .wrapper .container-pay .pay .pay__current-bid .curent-bit__title {
+  font-weight: 400;
+  font-size: 0.885vw;
+  line-height: 1.068vw;
+  color: #ffffff;
+  margin-bottom: 0.35vw;
+}
+
+body .wrapper .container-pay .pay .pay__current-bid img {
+  width: 8.906vw;
+}
+
+body .wrapper .container-pay .pay .block_pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.344vw 0 0 0;
+  gap: 2.083vw;
+  margin: 0 0 1.823vw 0;
+}
+
+body .wrapper .container-pay .pay .block_pay .container_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  gap: 1.302vw;
+}
+
+body .wrapper .container-pay .pay .block_pay .container_input span {
+  position: absolute;
+  right: 1.042vw;
+  top: 0.859vw;
+  font-size: 0.729vw;
+  color: #ffffff;
+}
+
+body .wrapper .container-pay .pay .block_pay .container_input input {
+  width: 13.724vw;
+  height: 2.76vw;
+  background: none;
+  border: 0.026vw #424241 solid;
+  font-weight: 500;
+  font-size: 0.729vw;
+  color: #ffffff;
+  padding: 0.911vw;
+  opacity: 0.4;
+}
+
+body .wrapper .container-pay .pay .block_pay .container_input button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.781vw;
+  width: 13.724vw;
+  height: 2.76vw;
+  background: none;
+  border: none;
+  background: #d8b45d;
+  font-weight: 500;
+  font-size: 0.99vw;
+  color: #000000;
+}
+
+body .wrapper .container-pay .pay .block_pay .container_input button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.72%, #fadf78), color-stop(78.26%, #f7e9ba));
+  background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
+}
+
+body .wrapper .container-pay .pay .block_pay .container_input button img {
+  width: 1.432vw;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 400;
+  font-size: 0.677vw;
+  line-height: 1.042vw;
+  gap: 2.161vw;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description p {
+  font-size: 0.677vw;
+  line-height: 1.042vw;
+  color: #ffffff;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description p span {
+  color: #d8b45d;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.547vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description .label .checkbox {
+  display: none;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description .label .checkbox:checked + .checkbox__fake::before {
+  opacity: 1;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description .label .text {
+  font-weight: 400;
+  font-size: 0.625vw;
+  color: #ffffff;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description .label .checkbox__fake {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  width: 0.625vw;
+  height: 0.625vw;
+  border: 0.026vw #d8b45d solid;
+  position: relative;
+}
+
+body .wrapper .container-pay .pay .block_pay .pay__description .label .checkbox__fake::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  content: "";
+  width: 0.417vw;
+  height: 0.417vw;
+  background-color: #d8b45d;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper .container-pay .pay .other-text {
+  font-weight: 400;
+  font-size: 0.521vw;
+  line-height: 0.833vw;
+  color: #ffffff;
+  opacity: 0.5;
+  margin: 0;
+}
+
 body .wrapper .menu-mobile {
   display: none;
 }
@@ -354,8 +584,8 @@ body .wrapper .main .current-bid button {
 }
 
 body .wrapper .main .current-bid button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.72%, #FADF78), color-stop(78.26%, #F7E9BA));
-  background: linear-gradient(180deg, #FADF78 27.72%, #F7E9BA 78.26%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.72%, #fadf78), color-stop(78.26%, #f7e9ba));
+  background: linear-gradient(180deg, #fadf78 27.72%, #f7e9ba 78.26%);
 }
 
 body .wrapper .main .current-bid button img {
@@ -414,7 +644,7 @@ body .wrapper .main .main__description-container .timer .timer-elem {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0.130vw;
+  gap: 0.13vw;
 }
 
 body .wrapper .main .main__description-container .timer .timer-elem .time-number {
@@ -464,6 +694,13 @@ body .wrapper .main .privacy_policy span {
 }
 
 @media (max-width: 1024px) {
+  body .wrapper .container-pay .pay {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+  body .wrapper .container-pay .pay .block_pay .container_input span {
+    top: 1vw;
+  }
   body .wrapper .main .messi-nft {
     top: 50%;
     -webkit-transform: translateY(-70%);
@@ -497,6 +734,111 @@ body .wrapper .main .privacy_policy span {
   body {
     height: auto;
     padding: 5.333vw 4vw 0;
+  }
+  body .wrapper .container-pay .pay {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    width: 92vw;
+    height: 120vw;
+    padding: 0 8vw;
+    -webkit-transform: translateY(4%);
+            transform: translateY(4%);
+  }
+  body .wrapper .container-pay .pay .pay__exit {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translate(-50%, -140%);
+            transform: translate(-50%, -140%);
+  }
+  body .wrapper .container-pay .pay .pay__exit img {
+    width: 5.333vw;
+    height: 5.333vw;
+  }
+  body .wrapper .container-pay .pay .pay__current-bid {
+    height: 20.267vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.467vw;
+  }
+  body .wrapper .container-pay .pay .pay__current-bid .curent-bit__title {
+    font-size: 4vw;
+    -webkit-transform: translateY(1.333vw);
+            transform: translateY(1.333vw);
+  }
+  body .wrapper .container-pay .pay .pay__current-bid img {
+    width: 36.267vw;
+  }
+  body .wrapper .container-pay .pay .block_pay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8vw 0 0 0;
+    gap: 4vw;
+    margin: 0 0 3.2vw 0;
+  }
+  body .wrapper .container-pay .pay .block_pay .container_input {
+    gap: 4vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .container_input span {
+    font-size: 3.733vw;
+    top: 4vw;
+    right: 4.533vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .container_input input {
+    padding: 4.533vw;
+    width: 76vw;
+    height: 12.533vw;
+    font-size: 3.733vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .container_input button {
+    width: 76vw;
+    height: 12.533vw;
+    font-size: 4vw;
+    gap: 3.467vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .container_input button img {
+    width: 5.867vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .pay__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 4vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .pay__description p {
+    font-size: 3.733vw;
+    line-height: 5.867vw;
+  }
+  body .wrapper .container-pay .pay .block_pay .pay__description .label {
+    gap: 2.667vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .wrapper .container-pay .pay .block_pay .pay__description .label .checkbox__fake {
+    width: 3.467vw;
+    height: 3.467vw;
+    -webkit-transform: translateY(0.533vw);
+            transform: translateY(0.533vw);
+  }
+  body .wrapper .container-pay .pay .block_pay .pay__description .label .checkbox__fake::before {
+    width: 2.4vw;
+    height: 2.4vw;
+    -webkit-transform: translate(-45%, -45%);
+            transform: translate(-45%, -45%);
+  }
+  body .wrapper .container-pay .pay .block_pay .pay__description .label .text {
+    font-size: 3.2vw;
+    line-height: 4.8vw;
+  }
+  body .wrapper .container-pay .pay .other-text {
+    font-size: 10px;
+    line-height: 14px;
   }
   body .wrapper .background {
     height: 100%;

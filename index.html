@@ -11,6 +11,51 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- Alert start -->
+
+      <div class="container-pay">
+        <div class="pay">
+          <button class="pay__exit">
+            <img src="./img/exit.svg" alt="exit">
+          </button>
+          <div class="pay__current-bid">
+            <span class="curent-bit__title">Current bid:</span>
+            <img src="./img/price.svg" alt="price" />
+          </div>
+
+          <div class="block_pay">
+            <div class="container_input">
+              <span>$</span>
+              <input type="text" placeholder="Your Bid" />
+              <button>
+                Place a bid <img src="./img/hammer.svg" alt="hammer" />
+              </button>
+            </div>
+            <div class="pay__description">
+              <p>
+                For security purposes increments of bid cannot be greater
+                <span>than $10,000</span> above current price
+              </p>
+              <label class="label">
+                <input type="checkbox" class="checkbox" />
+                <span class="checkbox__fake"></span>
+                <span class="text"
+                  >Agree to terms and conditions of the auction</span
+                >
+              </label>
+            </div>
+          </div>
+
+          <p class="other-text" >by confirming your bid you agree to pay the final price SHOULD YOU
+            BE THE WINNER. <br>
+            Final payment can be made in fiat vio bank transfer or in a
+            cryptocurrency listed in our terms and conditions.</p
+          >
+        </div>
+      </div>
+
+      <!-- Alert end -->
+
       <div class="menu-mobile">
         <button class="header__burger">
           <span></span>
